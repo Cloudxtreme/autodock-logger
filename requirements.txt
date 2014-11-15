@@ -1,0 +1,2 @@
+circuits
+https://bitbucket.org/prologic/autodock/get/tip.tar.bz2#egg=autodock
