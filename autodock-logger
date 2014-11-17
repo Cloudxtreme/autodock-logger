@@ -6,47 +6,60 @@
 
 from __future__ import print_function
 
+import sys
+import logging
+
 
 from autodock.plugin import Plugin
+
+
+logging.basicConfig(
+    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+    level=logging.INFO,
+    stream=sys.stderr
+)
+
+
+logger = logging.getLogger(__name__)
 
 
 class Logger(Plugin):
 
     def container_created(self, event, **data):
-        print("Container {} created".format(data["id"][:10]))
+        logging.info("Container {} created".format(data["id"][:10]))
 
     def container_destroyed(self, event, **data):
-        print("Container {} destroyed".format(data["id"][:10]))
+        logging.info("Container {} destroyed".format(data["id"][:10]))
 
     def container_started(self, event, **data):
-        print("Container {} started".format(data["id"][:10]))
+        logging.info("Container {} started".format(data["id"][:10]))
 
     def container_stopped(self, event, **data):
-        print("Container {} stopped".format(data["id"][:10]))
+        logging.info("Container {} stopped".format(data["id"][:10]))
 
     def container_killed(self, event, **data):
-        print("Container {} killed".format(data["id"][:10]))
+        logging.info("Container {} killed".format(data["id"][:10]))
 
     def container_died(self, event, **data):
-        print("Container {} died".format(data["id"][:10]))
+        logging.info("Container {} died".format(data["id"][:10]))
 
     def container_exported(self, event, **data):
-        print("Container {} exported".format(data["id"][:10]))
+        logging.info("Container {} exported".format(data["id"][:10]))
 
     def container_paused(self, event, **data):
-        print("Container {} paused".format(data["id"][:10]))
+        logging.info("Container {} paused".format(data["id"][:10]))
 
     def container_restarted(self, event, **data):
-        print("Container {} restarted".format(data["id"][:10]))
+        logging.info("Container {} restarted".format(data["id"][:10]))
 
     def container_unpaused(self, event, **data):
-        print("Container {} unpaused".format(data["id"][:10]))
+        logging.info("Container {} unpaused".format(data["id"][:10]))
 
     def image_untagged(self, event, **data):
-        print("Image {} untagged".format(data["id"][:10]))
+        logging.info("Image {} untagged".format(data["id"][:10]))
 
     def image_deleted(self, event, **data):
-        print("Image {} deleted".format(data["id"][:10]))
+        logging.info("Image {} deleted".format(data["id"][:10]))
 
 
 def main():
