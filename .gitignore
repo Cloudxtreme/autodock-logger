@@ -1,2 +1,5 @@
 *~
-*.py[c]
+dist
+build
+*.py[co]
+*.egg-info

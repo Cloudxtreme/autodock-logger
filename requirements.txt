@@ -1,1 +1,1 @@
-https://github.com/prologic/autodock/archive/master.zip#egg=autodock
+autodock
