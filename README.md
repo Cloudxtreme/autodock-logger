@@ -3,6 +3,8 @@ autodock-logger
 
 Logger plugin for autodock.
 
+autodock-logger is MIT licensed.
+
 > **note**
 >
 > See: [autodock](https://github.com/prologic/autodock)
@@ -22,7 +24,7 @@ Now whenever you start a new container autodock will listen for Docker events. T
 
 `docker-compose.yml`:
 
-``` {.sourceCode .yaml}
+``` sourceCode
 autodock:
     image: prologic/autodock
     ports:

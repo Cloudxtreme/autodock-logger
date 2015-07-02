@@ -3,6 +3,8 @@ autodock-logger
 
 Logger plugin for autodock.
 
+autodock-logger is MIT licensed.
+
 .. note:: See: `autodock <https://github.com/prologic/autodock>`_
 
 
