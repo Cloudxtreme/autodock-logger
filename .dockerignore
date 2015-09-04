@@ -1,0 +1,8 @@
+*~
+.git
+dist
+build
+*.py[co]
+Dockerfile
+*.egg-info
+.dockerignore
