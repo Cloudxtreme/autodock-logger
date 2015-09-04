@@ -25,6 +25,12 @@ logger = logging.getLogger(__name__)
 
 class Logger(Plugin):
 
+    def container_attached(self, event, **data):
+        logging.info("Container {} attached".format(data["id"][:10]))
+
+    def container_committed(self, event, **data):
+        logging.info("Container {} committed".format(data["id"][:10]))
+
     def container_created(self, event, **data):
         logging.info("Container {} created".format(data["id"][:10]))
 
@@ -48,6 +54,9 @@ class Logger(Plugin):
 
     def container_paused(self, event, **data):
         logging.info("Container {} paused".format(data["id"][:10]))
+
+    def container_resized(self, event, **data):
+        logging.info("Container {} resized".format(data["id"][:10]))
 
     def container_restarted(self, event, **data):
         logging.info("Container {} restarted".format(data["id"][:10]))
