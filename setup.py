@@ -12,7 +12,7 @@ def parse_requirements(filename):
 
 setup(
     name="autodock-logger",
-    version="0.0.1",
+    version="0.0.2",
     description="autodock logger plugin",
     long_description=open("README.rst", "r").read(),
     author="James Mills",
@@ -20,7 +20,7 @@ setup(
     url="https://github.com/prologic/autodock-logger",
     download_url="https://github.com/prologic/autodock-logger/archive/master.zip",
     classifiers=[
-        "Development Status :: 3 - Alpha",
+        "Development Status :: 4 - Beta",
         "Environment :: Console",
         "Intended Audience :: Developers",
         "Intended Audience :: System Administrators",
