@@ -1,6 +1,10 @@
 autodock-logger
 ===============
 
+.. image:: https://badge.imagelayers.io/prologic/autodock-logger:latest.svg
+   :target: https://imagelayers.io/?images=prologic/autodock-logger:latest
+   :alt: Image Layers
+
 Logger plugin for autodock.
 
 autodock-logger is MIT licensed.
