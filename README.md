@@ -14,7 +14,7 @@ Basic Usage
 
 Start the daemon:
 
-    $ docker run -d -v /var/run/docker.sock:/var/run/docker.sock --name autodock:autodock prologic/autodock
+    $ docker run -d -v /var/run/docker.sock:/var/run/docker.sock --name autodock prologic/autodock
 
 Link and start an autodock plugin:
 
