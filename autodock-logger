@@ -70,6 +70,9 @@ class Logger(Plugin):
     def image_deleted(self, event, **data):
         logging.info("Image {} deleted".format(data["id"][:10]))
 
+    def pull(self, event, **data):
+        logging.info("Image {} pulled".format(data["id"][:10]))
+
 
 def main():
     Logger().run()
