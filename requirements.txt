@@ -1,1 +1,1 @@
-autodock
+git+https://github.com/prologic/autodock#egg=autodock
